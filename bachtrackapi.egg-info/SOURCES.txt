@@ -11,9 +11,8 @@ bachtrackapi.egg-info/SOURCES.txt
 bachtrackapi.egg-info/dependency_links.txt
 bachtrackapi.egg-info/requires.txt
 bachtrackapi.egg-info/top_level.txt
-scrapers/__init__.py
-scrapers/bachtrack/__init__.py
-scrapers/bachtrack/scraper.py
+scraper/__init__.py
+scraper/scraper.py
 tests/test_api.py
 tests/test_api_v2.py
 tests/test_datetime.py
