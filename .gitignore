@@ -4,7 +4,7 @@
 
 *.ipynb
 CHANGES.md
-deployinstruction.md
+deployinstructions.md
 
 __pycache__/
 venv/
