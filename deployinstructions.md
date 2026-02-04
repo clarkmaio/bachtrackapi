@@ -17,7 +17,4 @@ python -m build
 twine upload dist/*
 ```
 
-
-```
-TOKEN
-```
+Note: Set your PyPI token in .pypirc or use `twine upload --skip-existing dist/*`
