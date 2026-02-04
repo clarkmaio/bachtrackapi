@@ -4,4 +4,10 @@
 
 *.ipynb
 CHANGES.md
-deploymentinstructions.md
+deployinstruction.md
+
+__pycache__/
+venv/
+env/
+.venv/
+.pypirc
