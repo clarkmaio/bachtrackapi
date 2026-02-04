@@ -55,10 +55,12 @@ Documentation = "https://github.com/clarkmaio/bachtrackapi#readme"
 Issues = "https://github.com/clarkmaio/bachtrackapi/issues"
 
 [tool.setuptools]
-packages = ["api", "scraper"]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bachtrackapi*"]
 
 [tool.setuptools.package-data]
-api = ["py.typed"]
+bachtrackapi = ["py.typed"]
 
 [tool.black]
 line-length = 100
