@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: bachtrackapi
-Version: 0.1.0
+Version: 0.1.1
 Summary: A Python web scraper and REST API for extracting classical music opera events from Bachtrack.com
 Author-email: Clark Maio <clark@example.com>
 License: MIT

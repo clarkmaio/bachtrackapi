@@ -2,10 +2,11 @@
 import sys
 from pathlib import Path
 
-# Add parent directory to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+# Ensure the inner `bachtrackapi` package directory is on sys.path so
+# `backend` imports resolve after the project restructure.
+sys.path.insert(0, str(Path(__file__).parent.parent / "bachtrackapi"))
 
-from api.main import app
+from backend.main import app
 from fastapi.testclient import TestClient
 
 

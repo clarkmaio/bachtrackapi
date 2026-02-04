@@ -1,7 +1,7 @@
 """Service layer for opera events business logic."""
 from typing import List, Union
 from scraper.scraper import BachtrackScraper
-from api.models.event import OperaEvent, OperaEventDetail
+from backend.models.event import OperaEvent, OperaEventDetail
 
 
 class OperaEventService:

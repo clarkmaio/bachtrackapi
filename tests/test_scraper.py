@@ -1,5 +1,10 @@
 """Test script for Bachtrack scraper."""
 import sys
+from pathlib import Path
+
+# Ensure we can import the `scraper` package inside `bachtrackapi`.
+sys.path.insert(0, str(Path(__file__).parent.parent / "bachtrackapi"))
+
 from scraper.scraper import BachtrackScraper
 
 

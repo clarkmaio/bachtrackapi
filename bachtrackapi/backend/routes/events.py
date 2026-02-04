@@ -1,8 +1,8 @@
 """Event search endpoints."""
 from fastapi import APIRouter, HTTPException, Query
 from typing import List, Dict, Any
-from api.models.event import SearchRequest, SearchResponse, OperaEvent
-from api.services.opera_service import OperaEventService
+from backend.models.event import SearchRequest, SearchResponse, OperaEvent
+from backend.services.opera_service import OperaEventService
 from scraper.scraper import BachtrackScraper
 
 

@@ -1,6 +1,13 @@
 """Integration test for the full API."""
+import sys
+from pathlib import Path
+
+# Ensure the inner package directory is on sys.path so imports like
+# `backend` and `scraper` resolve after project restructuring.
+sys.path.insert(0, str(Path(__file__).parent.parent / "bachtrackapi"))
+
 import asyncio
-from api.main import app
+from backend.main import app
 from fastapi.testclient import TestClient
 
 

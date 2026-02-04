@@ -2,7 +2,8 @@
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent.parent))
+# Ensure imports resolve to the `bachtrackapi` package directory.
+sys.path.insert(0, str(Path(__file__).parent.parent / "bachtrackapi"))
 
 from scraper.scraper import BachtrackScraper
 
