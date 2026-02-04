@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bachtrackapi"
+version = "0.1.0"
+description = "A Python web scraper and REST API for extracting classical music opera events from Bachtrack.com"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Clark Maio", email = "clark@example.com"}
+]
+keywords = ["scraper", "api", "opera", "classical-music", "fastapi", "bachtrack"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn[standard]==0.24.0",
+    "pydantic==2.5.0",
+    "pydantic-settings==2.1.0",
+    "requests==2.31.0",
+    "beautifulsoup4==4.12.2",
+    "selenium==4.15.2",
+    "webdriver-manager==4.0.1",
+    "python-dotenv==1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==7.4.3",
+    "pytest-asyncio==0.21.1",
+    "black==23.12.0",
+    "flake8==6.1.0",
+    "mypy==1.7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/clarkmaio/bachtrackapi"
+Repository = "https://github.com/clarkmaio/bachtrackapi.git"
+Documentation = "https://github.com/clarkmaio/bachtrackapi#readme"
+Issues = "https://github.com/clarkmaio/bachtrackapi/issues"
+
+[tool.setuptools]
+packages = ["api", "scrapers", "scrapers.bachtrack"]
+
+[tool.setuptools.package-data]
+api = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v --strict-markers"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
