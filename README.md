@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ### 1. Using the Scraper Directly
 
 ```python
-from scrapers.bachtrack.scraper import BachtrackScraper
+from scraper.scraper import BachtrackScraper
 
 scraper = BachtrackScraper()
 
@@ -105,7 +105,7 @@ pytest tests/test_api.py -v -s
 ## Project Structure
 
 ```
-scrapers/bachtrack/scraper.py    # Core scraping logic
+scraper/scraper.py           # Core scraping logic
 api/
   ├── main.py                    # FastAPI app factory
   ├── routes/events.py           # API endpoints

@@ -55,7 +55,7 @@ Documentation = "https://github.com/clarkmaio/bachtrackapi#readme"
 Issues = "https://github.com/clarkmaio/bachtrackapi/issues"
 
 [tool.setuptools]
-packages = ["api", "scrapers", "scrapers.bachtrack"]
+packages = ["api", "scraper"]
 
 [tool.setuptools.package-data]
 api = ["py.typed"]

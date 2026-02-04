@@ -1,6 +1,6 @@
 """Test script for Bachtrack scraper."""
 import sys
-from scrapers.bachtrack.scraper import BachtrackScraper
+from scraper.scraper import BachtrackScraper
 
 
 def test_gianni_schicchi():

@@ -5,7 +5,7 @@ from pathlib import Path
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from scrapers.bachtrack.scraper import BachtrackScraper
+from scraper.scraper import BachtrackScraper
 
 
 def test_freetext_search():

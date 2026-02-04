@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException, Query
 from typing import List, Dict, Any
 from api.models.event import SearchRequest, SearchResponse, OperaEvent
 from api.services.opera_service import OperaEventService
-from scrapers.bachtrack.scraper import BachtrackScraper
+from scraper.scraper import BachtrackScraper
 
 
 router = APIRouter(prefix="/api/v1/events", tags=["events"])
